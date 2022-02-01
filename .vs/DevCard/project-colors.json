@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dd67050a-8209-4ab4-91f3-56c4ce0243a4": {
+      "ProjectGuid": "dd67050a-8209-4ab4-91f3-56c4ce0243a4",
+      "DisplayName": "DevCard",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

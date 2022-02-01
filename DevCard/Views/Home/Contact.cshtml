@@ -1,17 +1,23 @@
 ﻿@model Contact
 @{
-    ViewData["Title"] = "ارتباط با ما";
+    ViewData["Title"] = "ارتباط با من";
+}
+
+@section Seo
+{
+    <meta name="keywords" content="Contact, Contact Us, Contact Me, Contact Page"/>
+    <meta name="description" content="Contacting me for working"/>
 }
 
 <section class="cta-section theme-bg-light py-5">
     <div class="container text-center single-col-max-width">
-        <h2 class="heading">ارتباط با ما</h2>
+        <h2 class="heading">ارتباط با من</h2>
         <div class="intro">
             <p>
-                شما می توانید از طریق فرم زیر با ما ارتباط بگیرید. لطفا پس از پرکردن آیتم ها، پیغام مورد نظر را
+                شما می توانید از طریق فرم زیر با من ارتباط بگیرید. لطفا پس از پرکردن آیتم ها، پیغام مورد نظر را
                 نوشته و ارسال کنید.
             </p>
-            <p>از طریق شبکه های اجتماعی با ما در ارتباط باشید</p>
+            <p>از طریق شبکه های اجتماعی نیز با من در ارتباط باشید...</p>
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mb-3">
                     <a class="twitter" href="#">
@@ -59,14 +65,14 @@
 
         @if (!string.IsNullOrWhiteSpace(ViewBag.success))
         {
-            <div class="alert-success p-5">
+            <div class="alert-success p-4">
                 <p>@ViewBag.success</p>
             </div>
         }
 
         @if (!string.IsNullOrWhiteSpace(ViewBag.error))
         {
-            <div class="alert-danger p-5">
+            <div class="alert-danger p-4">
                 <p>@ViewBag.error</p>
             </div>
         }
@@ -92,10 +98,10 @@
                 <div class="form-group col-12">
                     <label class="sr-only" asp-for="Message">پیغام شما</label>
                     <textarea class="form-control" asp-for="Message"
-                              placeholder="پیغام خود را وارد نمایید ..." rows="10"></textarea>
+                              placeholder="پیغام خود را وارد نمایید..." rows="10"></textarea>
                 </div>
                 <div class="form-group col-12">
-                    <button type="submit" class="btn btn-block btn-primary py-2">ارسال</button>
+                    <button type="submit" class="btn btn-block btn-primary py-2">ارسال پیغام</button>
                 </div>
             </div>
         </form>

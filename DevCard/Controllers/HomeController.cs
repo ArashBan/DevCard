@@ -11,11 +11,11 @@ namespace DevCard.Controllers
     {
         private readonly List<Service> _services = new List<Service>()
         {
-            new Service(1,"برنزه ای"),
-            new Service(2,"نقره ای"),
-            new Service(3,"طلایی"),
-            new Service(4,"پلاتینی"),
-            new Service(5,"زمردی")
+            new Service(1, "برنزه ای"),
+            new Service(2, "نقره ای"),
+            new Service(3, "طلایی"),
+            new Service(4, "پلاتینی"),
+            new Service(5, "زمردی")
         };
 
         public IActionResult Index()
@@ -47,7 +47,7 @@ namespace DevCard.Controllers
             //if(ModelState.IsValid == false)
             if (!ModelState.IsValid)
             {
-                ViewBag.error = "اطلاعات وارد شده صحیح نیست. لطفا دوباره تلاش کنید";
+                ViewBag.error = "اطلاعات وارد شده صحیح نیست! لطفا دوباره تلاش کنید.";
                 return View(model);
             }
 
@@ -57,7 +57,7 @@ namespace DevCard.Controllers
             {
                 Services = new SelectList(_services, "Id", "Name")
             };
-            ViewBag.success = "پیغام شما با موفقیت ارسال شد. باتشکر";
+            ViewBag.success = "پیغام شما با موفقیت ارسال شد!";
             return View(model);
             //return RedirectToAction("Index");
         }

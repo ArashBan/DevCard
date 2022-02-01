@@ -18,6 +18,8 @@ namespace DevCard.ViewComponents
                     "blog-post-thumb-card-3.jpg"),
                 new Article(4, "آموزش طراحی سایت", "کاملترین پکیج آموزش طراحی سایت به زبان فارسی",
                     "blog-post-thumb-card-4.jpg"),
+                new Article(5, "آموزش سی شارپ (#C)", "کاملترین پکیج آموزش سی شارپ به زبان فارسی",
+                    "blog-post-thumb-card-5.jpg")
             };
             return View("_LatestArticles", articles);
         }

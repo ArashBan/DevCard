@@ -10,10 +10,10 @@ namespace DevCard.ViewComponents
         {
             var projects = new List<Project>
             {
-                new Project(1, "تاکسی", "درخواست آنلاین تاکسی برای سفر های درون شهری", "project-1.jpg", "Atriya"),
-                new Project(2, "زودفود", "درخواست آنلاین غذا برای سراسر کشور", "project-2.jpg","ZoodFood"),
-                new Project(3, "مدارس", "سیستم مدیریت یکپارچه مدارس", "project-3.jpg","MONOP"),
-                new Project(4, "فضاپیما", "برنامه مدیریت فضاپیما های ناسا","project-4.jpg", "NASA"),
+                new Project(1, "مای پروفشنال", "نرم افزاری چندکاره مناسب برای روزمرگی برنامه نویسان", "project-1.jpg", "همکاران سیستم"),
+                new Project(2, "آروتل", "نرم افزار حرفه ای هتلداری برای هتل های بین المللی", "project-2.jpg","هتل آریا"),
+                new Project(3, "میلیون (منسوخ شده)", "نرم افزار ذخیره سازی ساده اطلاعات", "project-3.jpg","گردو"),
+                new Project(4, "رجیستر", "نرم افزار ثبت و ذخیره سازی اطلاعات برای مدارس","project-4.jpg", "مدرسه احرار")
             };
             return View("_Projects", projects);
         }
