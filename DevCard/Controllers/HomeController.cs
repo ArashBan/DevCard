@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
-
+using DevCard.Data;
 
 namespace DevCard.Controllers
 {
+    //[Route("/arash/products")]
     public class HomeController : Controller
     {
         private readonly List<Service> _services = new List<Service>()
@@ -18,12 +19,28 @@ namespace DevCard.Controllers
             new Service(5, "زمردی")
         };
 
+        //[Route("MyIndex/{name}/{model}")]
+        // localhost:5001/arash/site/MyIndex
         public IActionResult Index()
         {
             return View();
         }
 
+        public IActionResult ProjectDetails(long id)
+        {
+            var project = ProjectData.GetProjectBy(id);
+            return View(project);
+        }
+
+        public IActionResult ArticleDetails(long id)
+        {
+            var article = LatestArticlesData.GetArticleBy(id);
+            return View(article);
+        }
+
         [HttpGet]
+        //[Route("ContactPage/{id?}")]
+        // localhost:5001/arash/site/ContactPage
         public IActionResult Contact()
         {
             var model = new Contact

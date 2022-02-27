@@ -5,6 +5,11 @@
       "ProjectGuid": "dd67050a-8209-4ab4-91f3-56c4ce0243a4",
       "DisplayName": "DevCard",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

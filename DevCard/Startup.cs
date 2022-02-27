@@ -52,6 +52,13 @@ namespace DevCard
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        "Test",
+            //        "{controller=Home}/{action=Index}/{id?}");
+            //});
         }
     }
 }

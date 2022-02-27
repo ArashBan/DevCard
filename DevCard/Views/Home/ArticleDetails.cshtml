@@ -1,0 +1,29 @@
+﻿@model Article
+
+@{
+    ViewData["Title"] = "جزئیات مقاله";
+}
+
+@section Seo
+{
+    <meta name="keywords" content="Contact, Contact Us, Contact Me, Contact Page"/>
+    <meta name="description" content="Contacting me for working"/>
+}
+
+<section class="cta-section theme-bg-light py-5">
+    <div class="container text-center single-col-max-width">
+        <h2 class="heading">آخرین مقالات</h2>
+        <div class="intro">
+            <p>مقاله @Model.Title ..!</p>
+        </div>
+    </div>
+
+</section>
+<section class="contact-section px-3 py-5 p-md-5">
+    <div class="container">
+
+        <p style="text-align:center"><img src="~/assets/images/blog/@Model.Image" width="600px"/></p>
+        <p style="text-align:center">@Model.Description</p>
+
+    </div>
+</section>

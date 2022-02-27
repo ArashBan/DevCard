@@ -4,18 +4,21 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-5">پروژه های اخیر</h2>
         <div class="row">
+
             @foreach (var project in Model)
             {
                 <div class="col-md-6 mb-5">
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="~/assets/images/project/@project.Image" class="card-img" alt="@project.Name" title="@project.Description">
+                                <a asp-controller="Home" asp-action="ProjectDetails" asp-route-id="@project.Id" target="_blank">
+                                    <img src="~/assets/images/project/@project.Image" class="card-img" alt="@project.Name" title="@project.Description">
+                                </a>
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <a href="#" class="theme-link">
+                                        <a asp-controller="Home" asp-action="ProjectDetails" asp-route-id="@project.Id" target="_blank" class="theme-link">
                                             @project.Id. @project.Name
                                         </a>
                                     </h5>

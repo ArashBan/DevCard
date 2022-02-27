@@ -4,14 +4,17 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-5">آخرین مقالات</h2>
         <div class="row">
+
             @foreach (var article in Model)
             {
                 <div class="col-md-4 mb-5">
-                    <div class="card blog-post-card">
-                        <img class="card-img-top" src="~/assets/images/blog/@article.Image" alt="@article.Title" title="@article.Description">
+                    <div class="card article-card">
+                        <a asp-controller="Home" asp-action="ArticleDetails" asp-route-id="@article.Id" target="_blank">
+                            <img class="card-img-top" src="~/assets/images/blog/@article.Image" alt="@article.Title" title="@article.Description">
+                        </a>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a class="theme-link" href="#">
+                                <a class="theme-link" asp-controller="Home" asp-action="ArticleDetails" asp-route-id="@article.Id" target="_blank">
                                     @article.Title
                                 </a>
                             </h5>
@@ -19,7 +22,7 @@
                                 @article.Description
                             </p>
                             <p class="mb-0">
-                                <a class="more-link" href="#">ادامه مطلب</a>
+                                <a class="more-link" asp-controller="Home" asp-action="ArticleDetails" asp-route-id="@article.Id" target="_blank">ادامه مطلب</a>
                             </p>
                         </div>
                     </div>

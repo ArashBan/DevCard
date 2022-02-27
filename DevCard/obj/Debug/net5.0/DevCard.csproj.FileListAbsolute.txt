@@ -9,7 +9,6 @@ C:\Users\Arash\source\repos\DevCard\DevCard\bin\Debug\net5.0\ref\DevCard.dll
 C:\Users\Arash\source\repos\DevCard\DevCard\bin\Debug\net5.0\DevCard.pdb
 C:\Users\Arash\source\repos\DevCard\DevCard\bin\Debug\net5.0\DevCard.Views.dll
 C:\Users\Arash\source\repos\DevCard\DevCard\bin\Debug\net5.0\DevCard.Views.pdb
-C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.csproj.AssemblyReference.cache
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.AssemblyInfoInputs.cache
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.AssemblyInfo.cs
@@ -42,3 +41,5 @@ C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\ref\DevCard.dll
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.pdb
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.genruntimeconfig.cache
 C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\DevCard.csproj.CopyComplete
+C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\Razor\Views\Home\ProjectDetails.cshtml.g.cs
+C:\Users\Arash\source\repos\DevCard\DevCard\obj\Debug\net5.0\Razor\Views\Home\ArticleDetails.cshtml.g.cs
